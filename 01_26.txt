@@ -1,0 +1,24 @@
+NN 알드라이브 경로
+~/hadoop/hadoop-3.3.3
+
+HDFS 확인
+	bin/hadoop fs -ls /
+
+HDFS로 업로드
+	bin/hadoop fs -put 파일명.확장자 HDFS경로
+	bin/hadoop fs -put texts.txt /
+
+실행
+bin/hadoop jar 파일명.jar
+
+HDFS 확인
+	bin/hadoop fs -ls /
+
+실행하면 결과폴더/part-r-00000로 결과 파일을 만들어줌
+
+결과파일 가져오기
+	bin/hadoop fs -get /dResult/part-r-00000 sResult.txt
+
+ls로 Linux로 가져왔는지 확인
+
+그 결과파일을 알드라이브로 Win쪽에 가져와서 확인.
